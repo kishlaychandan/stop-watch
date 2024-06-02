@@ -1,0 +1,88 @@
+body {
+    background-color: skyblue;
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* margin: 0;
+    padding: 0; */
+    /* height: 100vh; */
+}
+.main{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+
+.heading{
+    Color:red;
+    /* width: 30rem; */
+    font-size: 4rem;
+    margin-top: 8rem;
+    /* background-color: aqua; */
+    text-align: center;
+    animation: heading 4s linear infinite;
+}
+@keyframes heading {
+    0%{
+        transform: scale(1);
+        color: red;
+    }
+    50%{
+        transform: scale(0.5);
+        color: yellow;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.button{
+    display: flex;
+    gap: 2rem;
+}
+
+.main .time{
+    /* padding: 0.5rem; */
+    font-size: 3rem;
+    width: 30rem;
+    justify-content: center;
+    gap: 1.8rem;
+    display: flex;
+    color: blue;
+    /* background-color: pink; */
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main .time span{
+    padding: 0.8rem 1rem;
+    border: 1px dashed violet ;
+    border-radius: 0.5rem;
+}
+
+.button > .start,.stop,.reset{
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(39, 95, 215);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(237, 221, 221);
+}
+.button > .start,.stop,.reset:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:478px) {
+    :root{
+        font-size: 12px;
+    }
+}
